@@ -1,0 +1,79 @@
+.promo
+    margin-top: 80px
+    position: relative
+    &::before
+        content: ''
+        width: 874.92px
+        height: 927.64px
+        left: 263.94px
+        top: -146px
+        position: absolute
+        background: #000000
+        filter: blur(250px)
+        border-radius: 300px
+        transform: rotate(45deg)
+        z-index: -1
+    &__wrap
+        display: flex
+        justify-content: space-between
+    &__title
+        font-size: 64px
+        line-height: 80px
+        background: linear-gradient(226.43deg, #FFFFFF 49.37%, rgba(255, 255, 255, 0) 99.78%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    &__subtitle
+        margin-top: 29px
+        font-weight: 300
+        font-size: 36px
+        line-height: 40px
+        letter-spacing: 0.05em
+        color: $main-color
+    &__benefits
+        margin-top: 86px
+        display: flex
+        width: 281px
+        justify-content: space-between
+    &__benefit
+        display: flex
+        align-items: center
+        flex-direction: column
+        max-width: 120px
+        &-img
+            width: 30px
+        &-descr
+            font-weight: 400
+            font-size: 14px
+            line-height: 22px
+            text-align: center
+            color: #FFFFFF
+    &__img
+        width: 700px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            width: 390px
+            height: 163px
+            left: 0
+            top: 0
+            z-index: -1
+            background: #A74E02
+            filter: blur(100px)
+            border-radius: 500px
+            transform: rotate(161.87deg)
+        &::after
+            content: ''
+            position: absolute
+            width: 201.18px
+            height: 87.88px
+            left: 100px
+            top: 58px
+            z-index: -1
+            background: #FFCF7A
+            filter: blur(50px)
+            border-radius: 500px
+            transform: rotate(161.87deg)
+        img
+            position: absolute
+            left: -230px

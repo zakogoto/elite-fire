@@ -1,0 +1,52 @@
+.header
+    padding: 76px 0 0 0
+    &__wrap
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__logo
+        display: flex
+        align-items: center
+        &-logo
+            font-family: 'Scania Sans CY '
+            font-weight: 400
+            font-size: 20px
+            line-height: 70px
+            letter-spacing: 0.105em
+            color: #FFFFFF
+            padding-right: 39px
+            &:hover
+                color: #fff
+        &-descr
+            width: 98px
+            font-size: 12px
+            line-height: 18px
+            color: #6D6D6D
+    &__menu
+        width: 547px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &-item, a
+            font-weight: 400
+            font-size: 13px
+            line-height: 16px
+            text-align: right
+            text-transform: uppercase
+            color: #949494
+            &:hover
+                color: $main-color
+    &__contacts
+        position: relative
+        &:hover
+            &::before
+                content: ''
+                position: absolute
+                width: 84px
+                height: 77px
+                background: rgba(201, 115, 53, 0.68)
+                filter: blur(50px)
+                border-radius: 500px
+                transform: rotate(-180deg)
+
+

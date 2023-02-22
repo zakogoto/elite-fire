@@ -1,0 +1,64 @@
+.options
+    margin-top: 40px
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(2, 570px)
+        grid-auto-rows: auto
+        column-gap: 85px
+        row-gap: 100px
+    &__block
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__title
+        font-weight: 400
+        font-size: 24px
+        line-height: 36px
+    &__descr
+        margin-top: 25px
+        font-weight: 400
+        font-size: 14px
+        line-height: 27px
+    &__img
+        padding-top: 19px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            width: 454px
+            height: 0px
+            left: 0
+            top: 0
+            border: 1px solid rgba(255, 207, 122, 0.72)
+        &::after
+            content: ''
+            position: absolute
+            width: 58.25px
+            height: 0px
+            right: 70px
+            top: 24px
+            border: 1px solid rgba(255, 207, 122, 0.72)
+            transform: rotate(55.49deg)
+        &-descr
+            width: 93px
+            margin: 65px auto 0 auto
+            font-weight: 400
+            font-size: 14px
+            line-height: 27px
+            color: #FFFFFF
+    &__complect
+        margin-top: 90px
+        width: 100%
+        &-title
+            font-weight: 400
+            font-size: 18px
+            line-height: 27px
+            color: #757575
+        &-wrap
+            margin-top: 45px
+            display: flex
+            justify-content: space-between
+        &-item
+            font-weight: 400
+            font-size: 14px
+            line-height: 27px

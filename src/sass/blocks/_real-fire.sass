@@ -1,0 +1,81 @@
+.real-fire
+    margin-top: 242px
+    &__wrap
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__title
+        font-weight: 250
+        font-size: 40px
+        line-height: 60px
+        text-align: center
+        width: 671px
+    &__descr
+        width: 822px
+        font-weight: 300
+        font-size: 20px
+        line-height: 33px
+        text-align: center
+        letter-spacing: 0.03em
+        position: relative
+        color: #FFFFFF
+        &::before
+            content: ''
+            position: absolute
+            width: 355px
+            height: 350px
+            left: 250px
+            background: rgba(245, 157, 93, 0.45)
+            filter: blur(125px)
+            transform: rotate(135deg)
+            z-index: -1
+        &::after
+            content: ''
+            position: absolute
+            width: 508px
+            height: 339px
+            left: 50%
+            transform: translateX(-50%)
+            background: rgba(255, 209, 128, 0.23)
+            filter: blur(75px)
+            z-index: -1
+    &__img
+        position: relative
+        width: 100%
+        img
+            width: 100%
+        &::before
+            content: ''
+            position: absolute
+            width: 826px
+            height: 551px
+            left: 50%
+            transform: translateX(-50%)
+            background: #392924
+            filter: blur(150px)
+            z-index: -1
+        &::after
+            content: ''
+            position: absolute
+            width: 508px
+            height: 499.83px
+            left: 15%
+            top: 107px
+            background: rgba(255, 209, 128, 0.23)
+            filter: blur(125px)
+            transform: rotate(135deg)
+            z-index: -1
+    &__benefits
+        display: flex
+        justify-content: space-between
+        width: 82%
+    &__benefit
+        display: flex
+        min-width: 234px
+        align-items: center
+        &-descr
+            font-weight: 300
+            font-size: 16px
+            line-height: 24px
+            color: #FFFFFF
+            margin-left: 29px

@@ -1,0 +1,63 @@
+.check-box
+    margin-top: 25px
+    display: flex
+    justify-content: space-between
+    ul
+        width: 217px
+        li
+            margin-bottom: 8px
+            &:last-child
+                margin-bottom: 0
+.custom-checkbox
+    position: absolute
+    z-index: -1
+    opacity: 0
+    &+label
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        user-select: none
+        &:after
+            content: ''
+            display: inline-block
+            width: 20px
+            height: 20px
+            flex-shrink: 0
+            flex-grow: 0
+            border: 1px solid #CEB787
+            border-radius: 2px
+            margin-left: 10px
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: 50% 50%
+            cursor: pointer
+    &:checked
+        &+label
+            &::after
+                border-color: #ECCF94
+                background-color: #ECCF94
+                background-image: url("../icons/add.svg")
+    &:not(:disabled)
+        &:not(:checked)
+            &+label
+                &:hover
+                    &::after
+                        border-color: #ECCF94
+        &:active
+            &+label
+                &::after 
+                    background-color: #ECCF94
+                    border-color: #ECCF94
+    &:focus
+        &+label
+            &::after
+                box-shadow: 0 0 0 0.2rem rgba(206, 183, 135, .25)
+        &:not(:checked)
+            &+label
+                &::after
+                    border-color: #ECCF94
+    &:disabled
+        &+label
+            &::after
+                background-color: #ECCF94
