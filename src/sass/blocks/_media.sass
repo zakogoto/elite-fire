@@ -1,10 +1,340 @@
-@media ( max-width: 1200px )
+@media ( max-width: 1399px )
     .container
         width: 1140px
+    .header
+        padding: 50px 0 0 0
     .promo
+        padding: 200px 0 180px 0
         &__title
             font-size: 56px
-    .real-fire
-        margin-top: 180px
     .fuel
         margin-top: 120px
+    .options
+        &__wrap
+            grid-template-columns: repeat(2, 550px)
+            column-gap: 40px
+        &__img
+            &::before
+                width: 435px
+    .task
+        &__wrap
+            column-gap: 15px
+    .constructor
+        margin-bottom: 90px
+        &__request
+            margin-top: 50px
+@media (max-width: 1201px)
+    .container
+        width: 960px
+    .header
+        padding: 30px 0 0 0
+    .promo
+        &__title
+            font-size: 43px
+    .fuel
+        &__img
+            background-position: 50% 50%
+    .smart
+        height: 550px
+        margin-top: 50px
+    .options
+        &__wrap
+            grid-template-columns: repeat(2,440px)
+            row-gap: 50px
+        &__img
+            &::before
+                width: 325px
+    .get-catalog
+        margin-top: 60px
+    .task
+        margin-top: 50px
+        &__title
+            margin-top: 40px
+        &__wrap
+            grid-template-columns: repeat(auto-fit,310px)
+            grid-auto-rows: 220px
+    .constructor
+        margin-top: 40px
+        &__wrap
+            margin-top: 50px
+    .slider
+        width: 440px
+        height: 280px
+        &__slide
+            width: 440px
+            height: 280px
+@media ( max-width: 992px )
+    .container
+        width: 720px
+    .header
+        padding: 35px 0 35px 0
+        &__wrap
+            display: none
+        &-mobile
+            display: flex
+    .promo
+        &__wrap
+            flex-flow: wrap
+        &__img
+            height: 300px
+            &::before
+                left: 230px
+            &::after
+                left: 330px
+            img
+                left: 0
+    .real-fire
+        overflow-x: clip
+        &__benefits
+            width: 100%
+        &__benefit
+            min-width: 230px
+            &-descr
+                font-size: 15px
+        &__descr
+            width: 100%
+    .fuel
+        margin-top: 70px
+        height: 880px
+        &__wrap
+            flex-wrap: wrap
+        &__img
+            flex-direction: row
+            &-descr
+                right: 140px
+    .smart
+        &__titles
+            width: 720px
+    .options
+        &__wrap
+            grid-template-columns: repeat(auto-fit, 100%)
+        &__descr
+            font-size: 18px
+        &__img
+            &::before
+                width: 605px
+        &__complect
+            padding-left: 20px
+            &-title
+                margin-top: 20px
+            &-item
+                font-size: 18px
+        &__block
+            align-items: center
+            &:first-of-type
+                align-items: normal
+    .slider
+        width: 540px
+        height: 340px
+        &__slide
+            width: 540px
+            height: 340px
+        &_small
+            margin: 20px auto 0 auto
+    .task
+        &__wrap
+            grid-template-columns: repeat(auto-fit,370px)
+            grid-auto-rows: 270px
+            justify-content: center
+    .constructor
+        &__wrap
+            flex-wrap: wrap
+            justify-content: center
+        &__img
+            width: 75%
+        &__blocks
+            width: 75%
+            margin-top: 40px
+    .contacts
+        &__block
+            &-phone
+                font-size: 32px
+            &-address
+                font-size: 20px
+        &__btn
+            width: 235px
+@media ( max-width: 768px )
+    .container
+        width: 540px
+    .title
+        font-size: 29px
+    .promo
+        padding: 100px 0
+        &__img
+            transform: scale(0.7) translateX(-120px)
+            &::before
+                left: 80px
+            &::after
+                left: 230px
+    .real-fire
+        &__benefits
+            flex-wrap: wrap
+        &__benefit
+            width: 280px
+            margin-top: 20px
+        &__title
+            width: 540px
+    .fuel
+        height: 780px
+        &__img
+            background-size: contain
+            justify-content: center
+            &-descr
+                right: 50px
+    .smart
+        margin-top: 0
+        height: 350px
+        &__titles
+            width: 540px
+    .options
+        &__descr
+            font-size: 15px
+        &__img
+            &::before
+                width: 424px
+        &__complect
+            &-item
+                font-size: 14px
+        &__title
+            font-size: 22px
+    .constructor
+        &__blocks
+            width: 90%
+        &__request
+            height: 50px
+            &-title
+                font-size: 11px
+            &-btn
+                width: 210px
+        &__length
+            font-size: 20px
+            line-height: 40px
+        &__cost
+            font-size: 25px
+    .contacts
+        &__blocks
+            margin-top: 30px
+            row-gap: 30px
+            grid-template-columns: repeat(2,minmax(140px,280px))
+            align-items: center
+        &__block
+            &-phone
+                font-size: 25px
+    .footer
+        &__years, &__company, &__politics
+            font-size: 10px
+@media ( max-width: 576px )
+    .container
+        width: auto
+        padding: 0 10px
+    .title
+        font-size: 23px
+    .check-box
+        flex-wrap: wrap
+        justify-content: center
+        ul
+            margin-top: 10px
+            width: 280px
+    .promo
+        padding: 100px 0 0 0
+        &__title
+            font-size: 23px
+            line-height: 40px
+        &__subtitle
+            font-size: 30px
+            margin-top: 15px
+        &__benefits
+            margin-top: 30px
+        &__img
+            transform: scale(0.4) translateX(-180px)
+    .real-fire
+        &__title
+            width: 100%
+        &__descr
+            font-size: 18px
+            line-height: 30px
+    .fuel
+        margin-top: 50px
+        &__descr
+            width: 100%
+        &__img
+            margin-top: 20px
+            &-number
+                font-size: 35px
+                line-height: 15px
+            &-descr
+                &::before
+                    width: 140px
+                    height: 140px
+                    left: -21px
+    .smart
+        &__titles
+            width: 90%
+            flex-wrap: wrap
+            &::before
+                top: 20px
+                left: 85%
+        &__title
+            line-height: 40px
+        &__img
+            top: 250px
+    .options
+        &__img
+            &::before
+                width: 244px
+            &::after
+                right: 10px
+        &__complect
+            &-wrap
+                &:first-of-type
+                    width: 280px
+            &-item
+                text-align: right
+    .slider
+        width: 280px
+        height: 174px
+        &__slide
+            width: 280px
+            height: 174px
+            img
+                width: 100%
+        &__btns
+            bottom: -35px
+            left: 50%
+            transform: translateX(-50%)
+    .get-catalog
+        &__title
+            font-size: 25px
+    .task
+        &__wrap
+            grid-template-columns: repeat(auto-fit,280px)
+            grid-auto-rows: 200px
+    .constructor
+        &__request
+            flex-direction: column
+            justify-content: space-between
+            align-items: flex-start
+            height: 400px
+            padding-left: 30px
+            &-title
+                font-size: 15px
+            &-block
+                margin-top: 20px
+                height: 70px
+            &-cost
+                font-size: 30px
+    .contacts
+        &__blocks
+            grid-template-columns: repeat(auto-fit,minmax(140px,280px))
+            justify-content: center
+            a
+                margin: 0 auto
+    .footer
+        padding: 30px 0
+        &__wrap
+            flex-direction: column
+            height: 150px
+        &__logo
+            font-size: 16px
+        &__years, &__company, &__politics
+            font-size: 14px

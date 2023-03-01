@@ -1,5 +1,11 @@
 .header
-    padding: 76px 0 0 0
+    padding-top: 76px
+    position: fixed
+    z-index: 3
+    top: 0
+    left: 0
+    right: 0
+    transition: 0.6s all
     &__wrap
         display: flex
         align-items: center
@@ -48,5 +54,15 @@
                 filter: blur(50px)
                 border-radius: 500px
                 transform: rotate(-180deg)
+    &-mobile
+        display: none
+        justify-content: space-between
+        align-items: center
+        z-index: 2
+        padding: 0 20px
+        position: fixed
+        width: 100%
+        top: 0
+        left: 0
 
 

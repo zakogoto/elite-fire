@@ -1,10 +1,13 @@
 .fuel
     margin-top: 200px
-    height: 500px
+    height: 600px
+    overflow: hidden
     &__wrap
         position: relative
+        display: flex
+        justify-content: space-between
     &__title
-        background: linear-gradient(233.62deg, #FFFFFF 28.79%, rgba(255, 255, 255, 0) 98.2%)
+        background: linear-gradient(5deg,rgba(189,188,189,0.4) 0,#fff 44%)
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
     &__descr
@@ -15,34 +18,20 @@
         color: #FFFFFF
         width: 370px
     &__img
-        position: absolute
-        top: -200px
-        right: -120px
-        &::before
-            content: ''
-            position: absolute
-            width: 194px
-            height: 194px
-            left: 38%
-            top: 52%
-            background: rgba(0, 0, 0, 0)
-            border: 2px solid #FFCF7A
-            border-radius: 100%
-            filter: drop-shadow(0px 8px 35px #FFE2A4)
-        &::after
-            content: ''
-            position: absolute
-            width: 98px
-            height: 98px
-            left: 29%
-            top: 48%
-            border: 1px solid #FFCF7A
-            border-radius: 100%
-            filter: drop-shadow(0px 4px 23px #FFE2A4)
+        position: relative
+        height: 590px
+        width: 750px
+        background: url('../img/fuel-bg.png') no-repeat
+        background-position: 0% 50%
+        // background-size: contain, cover
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        align-items: flex-start
         &-descr
             position: absolute
-            top: 33%
-            right: 245px
+            top: 30%
+            right: 80px
             font-family: 'Scania Sans CY '
             font-style: normal
             font-weight: 400
@@ -71,10 +60,6 @@
             line-height: 40px
             font-size: 10px
     &__connection
-        position: absolute
-        top: 150%
-        left: 50%
-        transform: translateX(-50%)
         &-icons
             position: relative
             width: 109px

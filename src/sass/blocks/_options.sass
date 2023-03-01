@@ -22,6 +22,8 @@
     &__img
         padding-top: 19px
         position: relative
+        img
+            width: 100%
         &::before
             content: ''
             position: absolute
@@ -39,15 +41,8 @@
             top: 24px
             border: 1px solid rgba(255, 207, 122, 0.72)
             transform: rotate(55.49deg)
-        &-descr
-            width: 93px
-            margin: 65px auto 0 auto
-            font-weight: 400
-            font-size: 14px
-            line-height: 27px
-            color: #FFFFFF
     &__complect
-        margin-top: 90px
+        margin-top: 20px
         width: 100%
         &-title
             font-weight: 400
@@ -55,9 +50,11 @@
             line-height: 27px
             color: #757575
         &-wrap
-            margin-top: 45px
+            margin-top: 20px
             display: flex
             justify-content: space-between
+            &:first-of-type
+                width: 360px
         &-item
             font-weight: 400
             font-size: 14px

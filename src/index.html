@@ -10,6 +10,30 @@
 <body>
     <header class="header">
         <div class="container">
+            <div class="header-mobile">
+                <div class="header__logo">
+                    <a href="#" class="header__logo-logo">Elite Fire</a>
+                </div>
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
+            <div class="mobile-menu hide">
+                <div class="mobile-menu__overlay">
+                </div>
+                <div class="mobile-menu__block">
+                    <ul class="mobile-menu__items">
+                        <li class="mobile-menu__item"><a href="#">продукция</a></li>
+                        <li class="mobile-menu__item"><a href="#constructor">конструктор</a></li>
+                        <li class="mobile-menu__item"><a href="#">опыт</a></li>
+                        <li class="mobile-menu__item"><a href="#contacts">контакты</a></li>
+                    </ul>
+                    <!-- <div class="float-menu__contact">
+                        <a href="tel:84994504797" class="float-menu__phone">8 (499) 450-47-97</a>
+                        <a href="mailto:info@conquest.watch.ru" class="float-menu__email">info@conquest.watch.ru</a>
+                    </div> -->
+                </div>
+            </div>
             <div class="header__wrap">
                 <div class="header__logo">
                     <a href="#" class="header__logo-logo">Elite Fire</a>
@@ -19,7 +43,7 @@
                     <li class="header__menu-item"><a href="#">продукция</a></li>
                     <li class="header__menu-item"><a href="#constructor">конструктор</a></li>
                     <li class="header__menu-item"><a href="#">опыт</a></li>
-                    <li class="header__menu-item"><a href="#">контакты</a></li>
+                    <li class="header__menu-item"><a href="#contacts">контакты</a></li>
                     <div class="header__contacts">
                         <a href="#"><img src="icons/phone-icon.svg" alt="phone"></a>
                     </div>
@@ -91,22 +115,22 @@
                     </p>
                 </div>
                 <div class="fuel__img">
-                    <img src="img/fuel-img.png" alt="соединения для камина">
+                    <!-- <img src="" alt="соединения для камина"> -->
                     <div class="fuel__img-descr">
                         <span class="fuel__img-number">3,5 <br></span>
                         <span class="fuel__img-minutes">минуты <br></span>
                         и бак наполнен <br> на 100% 
                     </div>
-                </div>
-                <div class="fuel__connection">
-                    <div class="fuel__connection-icons">
-                        <img src="icons/hose.svg" alt="шланг">
-                        <img src="icons/power.svg" alt="знак включения">
+                    <div class="fuel__connection">
+                        <div class="fuel__connection-icons">
+                            <img src="icons/hose.svg" alt="шланг">
+                            <img src="icons/power.svg" alt="знак включения">
+                        </div>
+                        <p class="fuel__connection-descr">
+                            Достаточно вставить шланг
+                            Нажать кнопку
+                        </p>
                     </div>
-                    <p class="fuel__connection-descr">
-                        Достаточно вставить шланг
-                        Нажать кнопку
-                    </p>
                 </div>
             </div>
         </div>
@@ -139,8 +163,18 @@
                     <div class="options__img">
                         <img src="img/options-img.png" alt="камин">
                     </div>
-                    <p class="options__img-descr">керамика нитрид титана<p>
                     <div class="options__complect">
+                        <h3 class="options__complect-title">Варианты отделки</h3>
+                        <div class="options__complect-wrap">
+                            <ul>
+                                <li class="options__complect-item">черный матовый</li>
+                                <li class="options__complect-item">шлифованная сталь</li>
+                            </ul>
+                            <ul>
+                                <li class="options__complect-item">керамика</li>
+                                <li class="options__complect-item">нитрид титана</li>
+                            </ul>
+                        </div>
                         <h3 class="options__complect-title">
                             Стандартная комплектация
                         </h3>
@@ -249,8 +283,10 @@
         </div>
     </section>
     <section class="get-catalog">
-        <h3 class="get-catalog__title">Получите каталог с моделями и ценами на всю нашу продукцию</h3>
-        <button class="get-catalog__btn">Получить каталог!</button>
+        <div class="container">
+            <h3 class="get-catalog__title">Получите каталог с моделями и ценами на всю нашу продукцию</h3>
+            <button class="get-catalog__btn">Получить каталог!</button>
+        </div>
     </section>
     <section class="task">
         <div class="container">
@@ -288,7 +324,7 @@
                     </div>
                     <div class="constructor__slider">
                         <h3 class="constructor__title">Лицевая панель</h3>
-                        <div class="slider slider_small">
+                        <div class="slider_small">
                             <div class="prev prev_small"></div>
                             <div class="next next_small"></div>
                             <div class="slider_small__wrap">
@@ -351,7 +387,7 @@
             </div>
             <div class="constructor__request">
                 <div class="constructor__request-block">
-                    <h4 class="consctructor__request-title">длина</h4>
+                    <h4 class="constructor__request-title">длина</h4>
                     <span class="constructor__length">6.5 м</span>
                 </div>
                 <div class="constructor__request-block">
@@ -366,7 +402,7 @@
             </div>
         </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <h2 class="contacts__title title">связаться с нами</h2>
             <div class="contacts__blocks">
